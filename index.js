@@ -1,35 +1,30 @@
 function isPalindrome(word) {
   // Write your algorithm here
-  let wordCase = word.toLowerCase()
-  let wordReverse = word.split('').reverse().join('')
-  if (wordCase===wordReverse){
-    return true
-
-  }
-  else {
-    return false
-  }
- 
-
-
+  let lowerCaseWord = word.toLowerCase()
+  let reversedWord = word.split('').reverse().join('')
+  return  lowerCaseWord === reversedWord
+  
+  
 }
-
+console.log(isPalindrome('racecar'))
+console.log(isPalindrome('mom'))
+console.log(isPalindrome('run'))
 
 /* 
   Add your pseudocode here
-  change the input into lowercase
-  "Then reverse the input string with the help of split and join method
-  use strict equality assignment to check if the input string and reverse string is same
-  Return true is its the same and false when its not
 */
+// convert the input string to lower case
+// also the input string should be reversed
+// compare the two variable
+// return the result of the comparison
 
 /*
   Add written explanation of your solution here
+  inside the function isPalindrome,the first step is to define the varable that will be assigned to the lower case input
+  the second step will be to define the second variavle that hold the reversed input.
+  afterwards the function is going to return the result of comparing the two variable using strict equality assignment.
+  the function will return true is the condition is met and false if the condition is not met
 */
-// i will convert the word into lowercase as the first step. secondi wil define a second varable that reverses the word by use of split method and join method. 
-//   i will then use if statement to compare the two varables using strict equaliy assignment. 
-//   when the condition is met, i expect the result to be true, and if the condition will not be met, i will expect a false return
-  
 
 // You can run `node index.js` to view these console logs
 if (require.main === module) {
